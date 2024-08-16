@@ -27,9 +27,7 @@ Este repositorio te permitirá construir una página web que interactuará con l
   - [Con Vite](#con-vite)
   - [Vite + Cloudflare Worker](#vite--cloudflare-worker)
 
-## Métodos
-
-### Con liveServer
+## Con liveServer
 
 > El método de liveServer es el más inseguro y menos recomendable.
 
@@ -59,7 +57,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 Y adaptar el código que nos trajo nuestro prompt del playground de gemini para utilizarlo en nuestro proyecto.
 
-### Con Vite
+## Con Vite
 
 > El método con Vite es el más recomendado y que se utiliza para desarrollar aplicaciones reales.
 
@@ -107,7 +105,7 @@ const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY))
 
 Y de esta manera, si agregamos el `.env` al `.gitignore` podremos subir libremente nuestro código a github sin miedo que nos bloqueen el código por mostrar nuestra api_key ya que no se muestra directamente en el código. Pero al subirlo a algún dominio habría que configurarlo para que maneje la variable de entorno que es.
 
-### Vite + Cloudflare Worker
+## Vite + Cloudflare Worker
 
 > Este es el método más seguro y con el que nos vamos a acercar más a deplegar un proyecto real a producción
 
@@ -121,7 +119,7 @@ Cloudflare además nos va a permitir desplegar nuestro proyecto a internet.
 
 > Todos los servicios de cloudflare que vamos a utilizar son gratuitos. Si quieren más sobre [cloudflare](https://www.cloudflare.com/es-es/learning/what-is-cloudflare/) y los [workers](https://www.cloudflare.com/es-la/developer-platform/workers/) pueden precionar en los links para más info
 
-#### Worker
+### Worker
 
 > Para entender mejor esta parte se recominda ver el tercer video del [drive](https://drive.google.com/drive/folders/1CJpKEzhl_4QOXlp2hm8vxVlfxnnzv3Ba?usp=sharing)
 
